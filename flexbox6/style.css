@@ -1,0 +1,243 @@
+$color__nav-white: white;
+$color__nav-black: black;
+$color__nav-lightgrey: lightgrey;
+$size__nav-line-height: 50px;
+$size__nav-font-mobile: 14px;
+$size__nav-font-desktop: 16px;
+$dimension__nav-container-width: 100%;
+$dimension__nav-space-from-top: 50px;
+
+$color__body-background: lightgrey;
+
+/* Mixins */
+
+@mixin hamburger-line($top) {
+  position: absolute;
+  top: $top;
+  left: 8px;
+  width: 34px;
+  height: 1px;
+  background-color: $color__nav-black;
+  transition: background-color 0.2s ease-in 0s;
+}
+
+@mixin hover-color-transition($hover-background-color, $font-color) {
+  &:focus,
+  &:active {
+    outline: 0;
+  }
+  &:hover,
+  &:focus {
+    background-color: $hover-background-color;
+    border-bottom: 1px solid $color__nav-black;
+    transition: all 0.3s ease-in 0s;
+    &:first-child {
+      border-top: 1px solid $color__nav-black;
+      @media only screen and (min-width: 768px) {
+        border-top: 1px solid transparent;
+      }
+    }
+    a {
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      -ms-backface-visibility: hidden;
+      color: $font-color;
+      font-size: $size__nav-font-mobile;
+      @media only screen and (min-width: 768px) {
+        font-size: $size__nav-font-desktop;
+      }
+      transition: color 0.4s ease-in 0s;
+    }
+  }
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: $color__body-background;
+}
+
+.navigation-mask{
+  width: 100%;
+  height: $size__nav-line-height + $dimension__nav-space-from-top;
+  position: absolute;
+  top: 0;
+  background-color: $color__body-background;
+  z-index: 3;
+   @media only screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.navigation-container {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: $dimension__nav-space-from-top;
+  width: $dimension__nav-container-width;
+  background-color: $color__nav-white;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  @media only screen and (min-width: 768px) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+.main-navigation {
+  width: 100%;
+  @media only screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+  .menu-container {
+    width: 100%;
+    position: relative;
+    @media only screen and (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+      width: 50%;
+    }
+    ul {
+      position: absolute;
+      top: 0px;
+      background-color: $color__nav-white;
+      z-index: 2;
+      transform: translateY(-150%);
+      transition: transform 0.4s ease-in 0s;
+      clear: both;
+      list-style: none;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      @media only screen and (min-width: 768px) {
+        display: flex;
+        width: 100%;
+        position: relative;
+        transform: translateY(0);
+        top: 0;
+      }
+      > li {
+        &:first-child {
+          border-top: 1px solid lightgrey;
+          @media only screen and (min-width: 768px) {
+            border-top: 1px solid transparent;
+          }
+        }
+        padding-left: 0px;
+        padding-right: 0px;
+        flex-grow: 1;
+        flex-basis: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease-in 0s;
+        z-index: 1;
+        border-bottom: 1px solid $color__nav-lightgrey;
+        @include hover-color-transition(black, white);
+        > a {
+          -webkit-backface-visibility: hidden;
+          -moz-backface-visibility: hidden;
+          -ms-backface-visibility: hidden;
+          -webkit-font-smoothing: antialiased;
+          text-decoration: none;
+          color: $color__nav-black;
+          line-height: $size__nav-line-height;
+          font-size: $size__nav-font-mobile;
+          transition: color 0.4s ease-in 0s;
+          white-space: nowrap;
+          width: 100%;
+          text-align: center;
+          @media only screen and (min-width: 768px) {
+            font-size: $size__nav-font-desktop;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* nav.js in project */
+
+.main-navigation.toggled {
+  .button-container {
+    .menu-button {
+      .hamburger {
+        left: -34px;
+        opacity: 0;
+        transition: all 0.4s ease-in 0s;
+      }
+      &:before {
+        top: 24px;
+        transform: rotate(135deg);
+        transition: all 0.4s ease-in 0s;
+      }
+      &:after {
+        top: 24px;
+        transform: rotate(-135deg);
+        transition: all 0.4s ease-in 0s;
+      }
+    }
+  }
+  .menu-container {
+    ul {
+      transform: translateY(0);
+      transition: transform 0.4s ease-out 0s;
+      > li {}
+      @media only screen and (min-width: 768px) {
+        display: flex;
+        position: relative;
+      }
+    }
+  }
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  background-color: $color__nav-white;
+  position: relative;
+  z-index: 4;
+  @media only screen and (min-width: 768px) {
+    display: none;
+  }
+  .menu-button {
+    position: relative;
+    padding: 0;
+    width: $size__nav-line-height;
+    height: $size__nav-line-height;
+    float: right;
+    background-color: #ffffff;
+    border-radious: 0;
+    border: none;
+    @media only screen and (min-width: 768px) {
+      display: none;
+    }
+    &:focus {
+      outline: 0;
+    }
+    &:hover {
+      .hamburger,
+      &:before,
+      &:after {
+        background-color: gray;
+        /*all is applied in custom-menu.toggled as well - otherwise background-color could be used instead of all*/
+        transition: all 0.4s ease-in 0s;
+      }
+    }
+    .hamburger {
+      @include hamburger-line(24px);
+    }
+    &:before {
+      content: "";
+      @include hamburger-line(12px);
+    }
+    &:after {
+      content: "";
+      @include hamburger-line(36px);
+    }
+  }
+}

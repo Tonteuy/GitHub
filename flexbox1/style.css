@@ -1,0 +1,73 @@
+@import "compass/css3";
+
+$blue: #26a2cb;
+$red: rgba(235,38,38,0.3);
+$green: rgba(65,128,41,0.3);
+$yellow: rgba(255,200,0,0.3);
+
+html {
+  background: url('http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/wild_oliva.png')
+}
+
+.yep {
+  font: {
+    family: 'Georgia';
+    size: 1.5em;
+  }
+  color: #26a2cb;
+  text-align: center;
+}
+
+
+.container {
+  display: -webkit-flex;
+  justify-content: center;
+  background: #26a2cb;
+}
+
+.flex
+   {
+      /* basic styling */
+      
+      width: 80em;
+      height: 30em;
+      border: 1px solid #555;
+      font: 14px 'Georgia';
+ 
+      /* flexbox setup */
+      display: -webkit-flex;
+      flex-flow: row nowrap; 
+ 
+      display: -moz-flex;
+ 
+      display: flex;
+      text-align: center;
+   }
+ 
+   .flex > div
+   {
+      -webkit-flex: 1;
+      -moz-flex: 1;
+      flex: 1;
+      align-self: auto;
+      width: 10em;
+ 
+     /* To make the transition work nicely.  (Transitions to/from
+                      "width:auto" are buggy in Gecko and Webkit, at least.
+                      See http://bugzil.la/731886 for more info.) */
+ 
+      -webkit-transition: all 0.7s ease-out;
+      transition: all 0.7s ease-out;
+   }
+ 
+   /* colors */
+   .flex > div:nth-child(1){ background : rgba(235,38,38,0.3); }
+   .flex > div:nth-child(2){ background : rgba(255,200,0,0.3); }
+   .flex > div:nth-child(3){ background : rgba(65,128,41,0.3); }
+ 
+   .flex > div:hover
+   {
+        flex: 3;
+    }
+
+  

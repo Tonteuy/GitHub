@@ -1,0 +1,14 @@
+* {font-family: 'Helvetica', 'Verdana', sans-serif;}
+#parent {
+  outline: 1px solid pink;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.children {
+  outline: 1px solid orange;
+  color: white;
+  background-color: gray;
+  padding: 1em;
+  flex-grow: 1;
+}

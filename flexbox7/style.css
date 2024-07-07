@@ -1,0 +1,55 @@
+body{
+    color:#FFF;
+    font-family:Helvetica, Arial, sans-serif;
+    
+  }
+  
+  .header{
+    background-color:#232323;
+    margin:0;
+  }
+  
+  .header,.child{
+    padding:20px 30px;
+  }
+  
+  .parent{
+    display:flex;
+    justify-content:space-around;
+  }
+  
+  .child{
+    width:25%;
+    box-sizing:border-box;
+  }
+  
+  
+  .child:nth-child(odd){
+    background-color:#323232;
+  }
+  
+  .child:nth-child(even){
+    background-color:#757575;
+  }
+  
+  @media all and (max-width:960px) {
+    .parent{
+      flex-flow: row wrap;
+    }  
+    .child{
+      width:50%;
+    }
+  }
+  
+  @media all and (max-width:550px) {
+    .parent {
+       flex-direction:column;
+    }
+    .child{
+      width:100%;
+    }
+  }
+  
+  
+  
+  
