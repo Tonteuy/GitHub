@@ -1,0 +1,40 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    .kutija1 {
+      width: 50%;
+      height: 300px;
+      background: lightblue;
+      margin: 20px auto;
+      position: relative;
+      order: 1;
+      @media (max-width: 500px) {
+        order: 2;
+      }
+      .inner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+      }
+    }
+    .kutija2 {
+      width: 50%;
+      height: 300px;
+      background: #b4da77;
+      margin: 20px auto;
+      position: relative;
+      order: 2;
+      @media (max-width: 500px) {
+        order: 1;
+      }
+      .inner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }

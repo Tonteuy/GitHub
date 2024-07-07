@@ -1,0 +1,46 @@
+// Variables 
+$page-margin: 5%; 
+$page-width: 100 - (2*$page-margin);
+$page-horizontal-ratio: 16;
+$page-vertical-ratio:  9;
+
+$page-ratio:  ($page-vertical-ratio/$page-horizontal-ratio)*100%;
+
+// Center Responsive Homothetic Block 
+.warpper {
+  margin: ($page-margin) auto;
+  width: $page-width;
+  position: relative;
+  &:after {
+    padding-top: $page-ratio;
+    display: block;
+    content: '';
+  }
+}
+  
+.page {
+    background-color: white; 
+    color: #4F4E68;
+    padding: 50px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+ }
+
+// end  of the code.
+
+/* codepen design */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700|Playfair+Display');
+$san-serif:'Open Sans', sans-serif;
+
+body {
+  background-color: #4F4E68;
+  font-family: $san-serif;
+}
+
+h2 {
+  font-weight: normal;
+}

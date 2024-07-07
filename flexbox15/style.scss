@@ -1,0 +1,36 @@
+// Grid container.
+.grid-area {
+	@include clearfix;
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	// Each grid item.
+	.grid-item {
+		@include margin(rem(4));
+		@include padding(rem(32) rem(32) rem(48) rem(32));
+		@include transition (all 0.2s ease-in-out);
+		
+		background: $color-white;
+		border-radius: 3px;
+		flex: 2 2 rem(240);
+		text-decoration: none;
+
+		.grid-item-title {
+			@include margin(null null rem(8) null);
+			
+			color: $color-black;
+		}
+
+		.grid-item-copy {
+			margin: auto;
+			
+			color: $color-black;
+		}
+
+		&.full-width {
+			flex: 1 1 rem(640);
+		}
+	}
+}

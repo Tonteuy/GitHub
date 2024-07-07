@@ -1,0 +1,49 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+  }
+  .main{
+    display: inline-flex;
+  }
+  .box {
+    margin-top: 50px;
+    font-size: 5em;
+    padding: 20px;
+    color: white;
+    font-weight: 800;
+    animation: aniload 3s;
+  }
+  
+  #box1::after {
+    content: "Tech";
+    display:flex;
+    transform:rotateX(180deg);
+    background-image:
+      linear-gradient(180deg,rgba(255,255,255,.0) 10%,rgba(255,255,255,.5));
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  #box2{
+    color: rgb(37,116,236);
+  }
+  #box2::after {
+    content: "Anarchy";
+    display:flex;
+    transform:rotateX(180deg);
+    background-image:
+      linear-gradient(180deg,rgba(37,116,236,.0) 10%,rgba(37,116,236,.5));
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  @keyframes aniload {
+    from {
+      transform: translate(-1000px, 0px)
+    }
+    to {
+      transform: translate(0px, 0px)
+    }
+  }
+  

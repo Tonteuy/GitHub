@@ -1,0 +1,82 @@
+// Global style
+body {
+	color: #666;
+	font-family: roboto Mono;
+	font-size: 17px;
+	font-weight: 600;
+
+	// Flex box - center
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+p {
+	background-color: white;
+	margin: 0;
+	text-align: center;
+}
+
+.title {
+	text-align: left;
+	padding: 20px 0;
+	width: 600px;
+}
+
+.title-definiton {
+	width: 500px;
+	margin-bottom: 30px;
+	text-align: left;
+	margin-left: 0;
+}
+
+// Box-sizing
+
+.parent {
+	background-color: lightblue;
+	width: 600px;
+	margin: 20px auto;
+}
+
+.child	{
+	background-color: lightsalmon;
+	width: 300px;
+	margin: 20px auto;
+}
+
+.content-box {
+	box-sizing: content-box;
+}
+
+.border-box {
+	box-sizing: border-box;
+}
+
+.padding {
+	padding: 50px;
+}
+
+.border {
+	border: 30px solid midnightblue;
+}
+
+
+//Footer
+.footer {
+	margin: 60px 0;
+}
+
+.c-btn {
+  text-decoration: none;
+  padding: 8px 18px;
+  border: 2px solid #666;
+	border-radius: 5px;
+	color: #666;
+	transition: all 0.3s ease-in-out;
+
+	&:hover {
+		background-color: lightsalmon;
+	}
+}

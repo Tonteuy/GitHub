@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 
+TODO: 
+- would be nice to have bootstrap code
+
+-->
+
+<div class="container main-container">
+    <div class="container button-container">
+      <div class="form-content">
+        <h1 class="title">Flex-Box</h1>
+        <p>
+          Try different flex methods and see their effect.<br>
+          <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">A Guide to Flexbox</a><br>
+          <a href="https://getbootstrap.com/docs/4.0/utilities/flex/">Bootstrap Flex</a>
+        </p>
+        Code output: <br><input type="radio" name="code" id="css-code-button" checked="checked">CSS <input type="radio" name="code" id="bootstrap-code-button">Bootstrap
+  
+        <br>Number of Items: <input type="number" id="number-of-boxes" value="4">
+  
+        <h3>Parent Properties</h3>
+        <input class="parent-property" name="display" type="radio" css-property="" css-value="" checked="checked"><i>nothing</i></input><br>
+        <input class="parent-property" name="display" type="radio" css-property="display" css-value="flex">display: flex</input><br>
+  
+        <h4>flex-direction:</h4>
+        <input class="parent-property" type="radio" name="flex-direction" css-property="" css-value="" checked="checked"><i>nothing</i><br>
+        <input class="parent-property" type="radio" name="flex-direction" css-property="flex-direction" css-value="row">row<br>
+        <input class="parent-property" type="radio" name="flex-direction" css-property="flex-direction" css-value="row-reverse">row-reverse<br>
+        <input class="parent-property" type="radio" name="flex-direction" css-property="flex-direction" css-value="column">column<br>
+        <input class="parent-property" type="radio" name="flex-direction" css-property="flex-direction" css-value="column-reverse">column-reverse<br>
+  
+        <h4>flex-wrap:</h4>
+        <input class="parent-property" type="radio" name="flex-wrap" css-property="" css-value="" checked="checked"><i>nothing</i><br>
+        <input class="parent-property" type="radio" name="flex-wrap" css-property="flex-wrap" css-value="nowrap">nowrap</input><br>
+        <input class="parent-property" type="radio" name="flex-wrap" css-property="flex-wrap" css-value="wrap">wrap</input><br>
+        <input class="parent-property" type="radio" name="flex-wrap" css-property="flex-wrap" css-value="wrap-reverse">wrap-reverse</input><br>
+  
+        <h4>justify-content:</h4>
+        <input class="parent-property" type="radio" name="justify-content" css-property="" css-value="" checked="checked"><i>nothing</i><br>
+        <input class="parent-property" type="radio" name="justify-content" css-property="justify-content" css-value="flex-start">flex-start<br>
+        <input class="parent-property" type="radio" name="justify-content" css-property="justify-content" css-value="flex-end">flex-end<br>
+        <input class="parent-property" type="radio" name="justify-content" css-property="justify-content" css-value="center">center<br>
+        <input class="parent-property" type="radio" name="justify-content" css-property="justify-content" css-value="space-between">space-between<br>
+        <input class="parent-property" type="radio" name="justify-content" css-property="justify-content" css-value="space-around">space-around<br>
+        <input class="parent-property" type="radio" name="justify-content" css-property="justify-content" css-value="space-evenly">space-evenly*<br>
+        <i>*No Bootstrap Support</i>
+  
+        <h4>align-items:</h4>
+        <input class="parent-property" type="radio" name="align-items" css-property="" css-value="" checked="checked"><i>nothing</i><br>
+        <input class="parent-property" type="radio" name="align-items" css-property="align-items" css-value="flex-start">flex-start<br>
+        <input class="parent-property" type="radio" name="align-items" css-property="align-items" css-value="flex-end">flex-end<br>
+        <input class="parent-property" type="radio" name="align-items" css-property="align-items" css-value="center">center<br>
+        <input class="parent-property" type="radio" name="align-items" css-property="align-items" css-value="baseline">baseline<br>
+        <input class="parent-property" type="radio" name="align-items" css-property="align-items" css-value="stretch">stretch<br>
+  
+        <h4>align-content:</h4>
+        Note: does nothing if there is only one row or one column of items<br>
+        <input class="parent-property" type="radio" name="align-content" css-property="" css-value="" checked="checked"><i>nothing</i><br>
+        <input class="parent-property" type="radio" name="align-content" css-property="align-content" css-value="flex-start">flex-start<br>
+        <input class="parent-property" type="radio" name="align-content" css-property="align-content" css-value="flex-end">flex-end<br>
+        <input class="parent-property" type="radio" name="align-content" css-property="align-content" css-value="center">center<br>
+        <input class="parent-property" type="radio" name="align-content" css-property="align-content" css-value="space-between">space-between*<br>
+        <input class="parent-property" type="radio" name="align-content" css-property="align-content" css-value="space-around">space-around<br>
+        <input class="parent-property" type="radio" name="align-content" css-property="align-content" css-value="stretch">stretch<br>
+        <i>*No Bootstrap Support</i>
+        <!--
+        <h3>Child Properties</h3>
+        Applied to Box 2<br>
+  
+        <h4>flex-grow</h4>
+        Uses a number: <input class="child-property" type="number" value="1" name="flex-grow" id="flex-grow">
+  
+        <h4>flex-shrink</h4>
+        Uses a number: <input class="child-property" type="number" value="1" name="flex-shrink" id="flex-shrink"><br> Note: default is 1.
+  
+        <h4>flex-bases</h4>
+        Number or auto:<br>
+        <input class="child-property" type="radio" name="flex-bases">Number: <input class="child-property" type="number" value="1" name="flex-bases-number" id="flex-bases-number"><br>
+        <input class="child-property" type="radio" name="flex-bases">Auto<br>
+  
+        <h4>align-self</h4>
+        <input class="child-property" type="radio" name="align-self">auto<br>
+        <input class="child-property" type="radio" name="align-self">flex-start<br>
+        <input class="child-property" type="radio" name="align-self">flex-end<br>
+        <input class="child-property" type="radio" name="align-self">center<br>
+        <input class="child-property" type="radio" name="align-self">baseline<br>
+        <input class="child-property" type="radio" name="align-self">stretch<br>
+        -->
+  
+        <div class="copyright">Copyright Daniel Cook 2018</div>
+      </div>
+    </div>
+    <div class="container output-container">
+      <div class="flex-example-container" id="flex-container">
+        <div class="flex-example-box">1</div>
+        <div class="flex-example-box">2</div>
+        <div class="flex-example-box">3</div>
+        <div class="flex-example-box">4</div>
+      </div>
+      <div class="css-output-container">
+        <pre><code id="css-text-output">/*---CSS---*/<br><br>.container {
+    }</code></pre>
+      </div>
+    </div>
+  
+  </div>
+</body>
+</html>

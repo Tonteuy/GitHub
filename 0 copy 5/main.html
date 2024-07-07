@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="flex-wrapper">
+        <h2 class="text-center">Default</h2>
+        <h3 class="text-center">Flex box with 12 flex items - (Default)</h3>
+        <div class="wrapper">
+          <input id="flex-1" class="text-center" type="checkbox" />
+          <label for="flex-1">
+            <div class="button">
+              <span>Click to Expand</span>
+            </div>
+          </label>
+          <div class="center-container">
+            <div class="w50">
+              <h3>Flex Container defaults are:</h3>
+              <ul>
+                <li>Flex-direction: row</li>
+                <li>Flex-wrap: nowrap</li>
+                <li>Justify-content: flex-start</li>
+                <li>Align-items: stretch</li>
+                <li>Align-content: stretch</li>
+              </ul>
+            </div>
+            <div class="w50">
+              <h3>Flex Item defaults are:</h3>
+              <ul>
+                <li>Flex-direction: row</li>
+                <li>Flex-wrap: nowrap</li>
+                <li>Justify-content: flex-start</li>
+                <li>Align-items: stretch</li>
+                <li>Align-content: stretch</li>
+              </ul>
+            </div>
+          </div>
+          <div class="clear"></div>
+          <div class="flex-container">
+            <div class="flex-item">
+              <p>Flex Box 1</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, voluptate.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 2</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, atque odit natus, architecto commodi dolores.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 3</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quisquam, voluptas optio officiis nobis a sequi culpa neque vero magni porro id libero deleniti totam corporis suscipit enim laborum delectus.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 4</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam excepturi saepe, aspernatur a. Earum itaque quasi consequuntur at! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati voluptates in nulla reprehenderit veritatis,
+                esse temporibus ipsam mollitia dolorem doloremque magnam quam pariatur, beatae labore.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 5</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 6</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 7</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 8</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 9</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 10</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 11</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 12</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="flex-wrapper">
+        <h2 class="text-center">Flex Direction</h2>
+        <h3 class="text-center">Flex direction set to Row - (Default)</h3>
+        <div class="wrapper">
+          <input id="flex-2" class="text-center" type="checkbox" />
+          <label for="flex-2">
+          <div class="button">
+            <span>Click to Expand</span>
+          </div>
+        </label>
+          <div class="direction-row flex-container">
+            <div class="flex-item">
+              <p>Flex Box 1</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, voluptate.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 2</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, atque odit natus, architecto commodi dolores.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 3</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quisquam, voluptas optio officiis nobis a sequi culpa neque vero magni porro id libero deleniti totam corporis suscipit enim laborum delectus.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 4</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam excepturi saepe, aspernatur a. Earum itaque quasi consequuntur at! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati voluptates in nulla reprehenderit veritatis,
+                esse temporibus ipsam mollitia dolorem doloremque magnam quam pariatur, beatae labore.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 5</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 6</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 7</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 8</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 9</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 10</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 11</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 12</p>
+            </div>
+          </div>
+        </div>
+      
+        <h3 class="text-center">Flex direction set to Row Reverse</h3>
+        <div class="wrapper">
+          <input id="flex-3" class="text-center" type="checkbox" />
+          <label for="flex-3">
+          <div class="button">
+            <span>Click to Expand</span>
+          </div>
+        </label>
+          <div class="flex-container direction-row-reverse">
+            <div class="flex-item">
+              <p>Flex Box 1</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, voluptate.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 2</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, atque odit natus, architecto commodi dolores.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 3</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quisquam, voluptas optio officiis nobis a sequi culpa neque vero magni porro id libero deleniti totam corporis suscipit enim laborum delectus.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 4</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam excepturi saepe, aspernatur a. Earum itaque quasi consequuntur at! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati voluptates in nulla reprehenderit veritatis,
+                esse temporibus ipsam mollitia dolorem doloremque magnam quam pariatur, beatae labore.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 5</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 6</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 7</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 8</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 9</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 10</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 11</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 12</p>
+            </div>
+          </div>
+        </div>
+      
+        <h3 class="text-center">Flex direction set to Column</h3>
+        <div class="wrapper">
+          <input id="flex-4" class="text-center" type="checkbox" />
+          <label for="flex-4">
+          <div class="button">
+            <span>Click to Expand</span>
+          </div>
+        </label>
+          <div class="flex-container direction-column">
+            <div class="flex-item">
+              <p>Flex Box 1</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, voluptate.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 2</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, atque odit natus, architecto commodi dolores.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 3</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quisquam, voluptas optio officiis nobis a sequi culpa neque vero magni porro id libero deleniti totam corporis suscipit enim laborum delectus.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 4</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam excepturi saepe, aspernatur a. Earum itaque quasi consequuntur at! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati voluptates in nulla reprehenderit veritatis,
+                esse temporibus ipsam mollitia dolorem doloremque magnam quam pariatur, beatae labore.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 5</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 6</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 7</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 8</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 9</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 10</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 11</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 12</p>
+            </div>
+          </div>
+        </div>
+      
+        <h3 class="text-center">Flex direction set to Column Reverse</h3>
+        <div class="wrapper">
+          <input id="flex-5" class="text-center" type="checkbox" />
+          <label for="flex-5">
+          <div class="button">
+            <span>Click to Expand</span>
+          </div>
+        </label>
+          <div class="flex-container direction-column-reverse">
+            <div class="flex-item">
+              <p>Flex Box 1</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, voluptate.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 2</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, atque odit natus, architecto commodi dolores.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 3</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quisquam, voluptas optio officiis nobis a sequi culpa neque vero magni porro id libero deleniti totam corporis suscipit enim laborum delectus.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 4</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam excepturi saepe, aspernatur a. Earum itaque quasi consequuntur at! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati voluptates in nulla reprehenderit veritatis,
+                esse temporibus ipsam mollitia dolorem doloremque magnam quam pariatur, beatae labore.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 5</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 6</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 7</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 8</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 9</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 10</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 11</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 12</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="flex-wrapper">
+        <h2 class="text-center">Flex Wrap</h2>
+        <h3 class="text-center">Flex wrap set to wrap</h3>
+        <div class="wrapper">
+          <input id="flex-6" class="text-center" type="checkbox" />
+          <label for="flex-6">
+          <div class="button">
+            <span>Click to Expand</span>
+          </div>
+        </label>
+          <div class="flex-container flex-wrap-wrap">
+            <div class="flex-item">
+              <p>Flex Box 1</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, voluptate.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 2</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, atque odit natus, architecto commodi dolores.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 3</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quisquam, voluptas optio officiis nobis a sequi culpa neque vero magni porro id libero deleniti totam corporis suscipit enim laborum delectus.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 4</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam excepturi saepe, aspernatur a. Earum itaque quasi consequuntur at! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati voluptates in nulla reprehenderit veritatis,
+                esse temporibus ipsam mollitia dolorem doloremque magnam quam pariatur, beatae labore.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 5</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 6</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 7</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 8</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 9</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 10</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 11</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 12</p>
+            </div>
+          </div>
+        </div>
+      
+        <h3 class="text-center">Flex wrap set to wrap reverse</h3>
+        <div class="wrapper">
+          <input id="flex-7" class="text-center" type="checkbox" />
+          <label for="flex-7">
+          <div class="button">
+            <span>Click to Expand</span>
+          </div>
+        </label>
+          <div class="flex-container flex-wrap-wrap-reverse">
+            <div class="flex-item">
+              <p>Flex Box 1</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, voluptate.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 2</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, atque odit natus, architecto commodi dolores.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 3</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quisquam, voluptas optio officiis nobis a sequi culpa neque vero magni porro id libero deleniti totam corporis suscipit enim laborum delectus.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 4</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam excepturi saepe, aspernatur a. Earum itaque quasi consequuntur at! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati voluptates in nulla reprehenderit veritatis,
+                esse temporibus ipsam mollitia dolorem doloremque magnam quam pariatur, beatae labore.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 5</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 6</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 7</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 8</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 9</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 10</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 11</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 12</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="flex-wrapper">
+        <h2 class="text-center">Justify Content</h2>
+        <h3 class="text-center">Justify content set to flex-end</h3>
+        <div class="wrapper">
+          <input id="flex-8" class="text-center" type="checkbox" />
+          <label for="flex-8">
+          <div class="button">
+            <span>Click to Expand</span>
+          </div>
+        </label>
+          <div class="flex-container justify-content-flex-end">
+            <div class="flex-item">
+              <p>Flex Box 1</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, voluptate.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 2</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, atque odit natus, architecto commodi dolores.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 3</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quisquam, voluptas optio officiis nobis a sequi culpa neque vero magni porro id libero deleniti totam corporis suscipit enim laborum delectus.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 4</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam excepturi saepe, aspernatur a. Earum itaque quasi consequuntur at! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati voluptates in nulla reprehenderit veritatis,
+                esse temporibus ipsam mollitia dolorem doloremque magnam quam pariatur, beatae labore.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 5</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 6</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 7</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 8</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 9</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 10</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 11</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 12</p>
+            </div>
+          </div>
+        </div>
+      
+        <h3 class="text-center">Justify content set to center</h3>
+        <div class="wrapper">
+          <input id="flex-9" class="text-center" type="checkbox" />
+          <label for="flex-9">
+          <div class="button">
+            <span>Click to Expand</span>
+          </div>
+        </label>
+          <div class="flex-container justify-content-center">
+            <div class="flex-item">
+              <p>Flex Box 1</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, voluptate.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 2</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, atque odit natus, architecto commodi dolores.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 3</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quisquam, voluptas optio officiis nobis a sequi culpa neque vero magni porro id libero deleniti totam corporis suscipit enim laborum delectus.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 4</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam excepturi saepe, aspernatur a. Earum itaque quasi consequuntur at! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati voluptates in nulla reprehenderit veritatis,
+                esse temporibus ipsam mollitia dolorem doloremque magnam quam pariatur, beatae labore.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 5</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 6</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 7</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 8</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 9</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 10</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 11</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 12</p>
+            </div>
+          </div>
+        </div>
+      
+        <h3 class="text-center">Justify content set to space between</h3>
+        <div class="wrapper">
+          <input id="flex-10" class="text-center" type="checkbox" />
+          <label for="flex-10">
+          <div class="button">
+            <span>Click to Expand</span>
+          </div>
+        </label>
+          <div class="flex-container justify-content-space-between">
+            <div class="flex-item">
+              <p>Flex Box 1</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, voluptate.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 2</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, atque odit natus, architecto commodi dolores.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 3</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quisquam, voluptas optio officiis nobis a sequi culpa neque vero magni porro id libero deleniti totam corporis suscipit enim laborum delectus.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 4</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam excepturi saepe, aspernatur a. Earum itaque quasi consequuntur at! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati voluptates in nulla reprehenderit veritatis,
+                esse temporibus ipsam mollitia dolorem doloremque magnam quam pariatur, beatae labore.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 5</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 6</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 7</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 8</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 9</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 10</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 11</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 12</p>
+            </div>
+          </div>
+        </div>
+      
+        <h3 class="text-center">Justify content set to space around</h3>
+        <div class="wrapper">
+          <input id="flex-11" class="text-center" type="checkbox" />
+          <label for="flex-11">
+          <div class="button">
+            <span>Click to Expand</span>
+          </div>
+        </label>
+          <div class="flex-container justify-content-space-around">
+            <div class="flex-item">
+              <p>Flex Box 1</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, voluptate.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 2</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, atque odit natus, architecto commodi dolores.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 3</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quisquam, voluptas optio officiis nobis a sequi culpa neque vero magni porro id libero deleniti totam corporis suscipit enim laborum delectus.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 4</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam excepturi saepe, aspernatur a. Earum itaque quasi consequuntur at! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati voluptates in nulla reprehenderit veritatis,
+                esse temporibus ipsam mollitia dolorem doloremque magnam quam pariatur, beatae labore.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 5</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 6</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 7</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 8</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 9</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 10</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 11</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 12</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="flex-wrapper">
+        <h2 class="text-center">Align Items</h2>
+        <h3 class="text-center">Align items flex start</h3>
+        <div class="wrapper">
+          <input id="flex-12" class="text-center" type="checkbox" />
+          <label for="flex-12">
+          <div class="button">
+            <span>Click to Expand</span>
+          </div>
+        </label>
+          <div class="flex-container align-items-flex-start">
+            <div class="flex-item">
+              <p>Flex Box 1</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, voluptate.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 2</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, atque odit natus, architecto commodi dolores.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 3</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quisquam, voluptas optio officiis nobis a sequi culpa neque vero magni porro id libero deleniti totam corporis suscipit enim laborum delectus.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 4</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam excepturi saepe, aspernatur a. Earum itaque quasi consequuntur at! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati voluptates in nulla reprehenderit veritatis,
+                esse temporibus ipsam mollitia dolorem doloremque magnam quam pariatur, beatae labore.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 5</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 6</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 7</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 8</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 9</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 10</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 11</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 12</p>
+            </div>
+          </div>
+        </div>
+      
+        <h3 class="text-center">Align items flex end</h3>
+        <div class="wrapper">
+          <input id="flex-13" class="text-center" type="checkbox" />
+          <label for="flex-13">
+          <div class="button">
+            <span>Click to Expand</span>
+          </div>
+        </label>
+          <div class="flex-container align-items-flex-end">
+            <div class="flex-item">
+              <p>Flex Box 1</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, voluptate.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 2</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, atque odit natus, architecto commodi dolores.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 3</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quisquam, voluptas optio officiis nobis a sequi culpa neque vero magni porro id libero deleniti totam corporis suscipit enim laborum delectus.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 4</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam excepturi saepe, aspernatur a. Earum itaque quasi consequuntur at! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati voluptates in nulla reprehenderit veritatis,
+                esse temporibus ipsam mollitia dolorem doloremque magnam quam pariatur, beatae labore.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 5</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 6</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 7</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 8</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 9</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 10</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 11</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 12</p>
+            </div>
+          </div>
+        </div>
+      
+        <h3 class="text-center">Align items center</h3>
+        <div class="wrapper">
+          <input id="flex-14" class="text-center" type="checkbox" />
+          <label for="flex-14">
+          <div class="button">
+            <span>Click to Expand</span>
+          </div>
+        </label>
+          <div class="flex-container align-items-center">
+            <div class="flex-item">
+              <p>Flex Box 1</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, voluptate.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 2</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, atque odit natus, architecto commodi dolores.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 3</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quisquam, voluptas optio officiis nobis a sequi culpa neque vero magni porro id libero deleniti totam corporis suscipit enim laborum delectus.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 4</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam excepturi saepe, aspernatur a. Earum itaque quasi consequuntur at! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati voluptates in nulla reprehenderit veritatis,
+                esse temporibus ipsam mollitia dolorem doloremque magnam quam pariatur, beatae labore.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 5</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 6</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 7</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 8</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 9</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 10</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 11</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 12</p>
+            </div>
+          </div>
+        </div>
+      
+        <h3 class="text-center">Align items baseline</h3>
+        <div class="wrapper">
+          <input id="flex-15" class="text-center" type="checkbox" />
+          <label for="flex-15">
+          <div class="button">
+            <span>Click to Expand</span>
+          </div>
+        </label>
+          <div class="flex-container align-items-baseline">
+            <div class="flex-item">
+              <p>Flex Box 1</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, voluptate.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 2</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, atque odit natus, architecto commodi dolores.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 3</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quisquam, voluptas optio officiis nobis a sequi culpa neque vero magni porro id libero deleniti totam corporis suscipit enim laborum delectus.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 4</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam excepturi saepe, aspernatur a. Earum itaque quasi consequuntur at! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati voluptates in nulla reprehenderit veritatis,
+                esse temporibus ipsam mollitia dolorem doloremque magnam quam pariatur, beatae labore.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 5</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 6</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 7</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 8</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 9</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 10</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 11</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 12</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="flex-wrapper">
+        <h2 class="text-center">Align Content</h2>
+        <h3 class="text-center">Align content flex start</h3>
+        <div class="wrapper">
+          <input id="flex-16" class="text-center" type="checkbox" />
+          <label for="flex-16">
+          <div class="button">
+            <span>Click to Expand</span>
+          </div>
+        </label>
+          <div class="flex-container align-content-flex-start">
+            <div class="flex-item">
+              <p>Flex Box 1</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, voluptate.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 2</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, atque odit natus, architecto commodi dolores.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 3</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quisquam, voluptas optio officiis nobis a sequi culpa neque vero magni porro id libero deleniti totam corporis suscipit enim laborum delectus.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 4</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam excepturi saepe, aspernatur a. Earum itaque quasi consequuntur at! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati voluptates in nulla reprehenderit veritatis,
+                esse temporibus ipsam mollitia dolorem doloremque magnam quam pariatur, beatae labore.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 5</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 6</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 7</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 8</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 9</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 10</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 11</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 12</p>
+            </div>
+          </div>
+        </div>
+      
+        <h3 class="text-center">Align content flex end</h3>
+        <div class="wrapper">
+          <input id="flex-17" class="text-center" type="checkbox" />
+          <label for="flex-17">
+          <div class="button">
+            <span>Click to Expand</span>
+          </div>
+        </label>
+          <div class="flex-container align-content-flex-end">
+            <div class="flex-item">
+              <p>Flex Box 1</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, voluptate.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 2</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, atque odit natus, architecto commodi dolores.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 3</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quisquam, voluptas optio officiis nobis a sequi culpa neque vero magni porro id libero deleniti totam corporis suscipit enim laborum delectus.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 4</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam excepturi saepe, aspernatur a. Earum itaque quasi consequuntur at! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati voluptates in nulla reprehenderit veritatis,
+                esse temporibus ipsam mollitia dolorem doloremque magnam quam pariatur, beatae labore.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 5</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 6</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 7</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 8</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 9</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 10</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 11</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 12</p>
+            </div>
+          </div>
+        </div>
+      
+        <h3 class="text-center">Align content center</h3>
+        <div class="wrapper">
+          <input id="flex-18" class="text-center" type="checkbox" />
+          <label for="flex-18">
+          <div class="button">
+            <span>Click to Expand</span>
+          </div>
+        </label>
+          <div class="flex-container align-content-center">
+            <div class="flex-item">
+              <p>Flex Box 1</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, voluptate.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 2</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, atque odit natus, architecto commodi dolores.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 3</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quisquam, voluptas optio officiis nobis a sequi culpa neque vero magni porro id libero deleniti totam corporis suscipit enim laborum delectus.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 4</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam excepturi saepe, aspernatur a. Earum itaque quasi consequuntur at! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati voluptates in nulla reprehenderit veritatis,
+                esse temporibus ipsam mollitia dolorem doloremque magnam quam pariatur, beatae labore.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 5</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 6</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 7</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 8</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 9</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 10</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 11</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 12</p>
+            </div>
+          </div>
+        </div>
+      
+        <h3 class="text-center">Align content space between</h3>
+        <div class="wrapper">
+          <input id="flex-19" class="text-center" type="checkbox" />
+          <label for="flex-19">
+          <div class="button">
+            <span>Click to Expand</span>
+          </div>
+        </label>
+          <div class="flex-container align-content-space-between">
+            <div class="flex-item">
+              <p>Flex Box 1</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, voluptate.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 2</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, atque odit natus, architecto commodi dolores.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 3</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quisquam, voluptas optio officiis nobis a sequi culpa neque vero magni porro id libero deleniti totam corporis suscipit enim laborum delectus.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 4</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam excepturi saepe, aspernatur a. Earum itaque quasi consequuntur at! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati voluptates in nulla reprehenderit veritatis,
+                esse temporibus ipsam mollitia dolorem doloremque magnam quam pariatur, beatae labore.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 5</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 6</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 7</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 8</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 9</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 10</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 11</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 12</p>
+            </div>
+          </div>
+        </div>
+      
+        <h3 class="text-center">Align content space around</h3>
+        <div class="wrapper">
+          <input id="flex-20" class="text-center" type="checkbox" />
+          <label for="flex-20">
+          <div class="button">
+            <span>Click to Expand</span>
+          </div>
+        </label>
+          <div class="flex-container align-content-space-around">
+            <div class="flex-item">
+              <p>Flex Box 1</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, voluptate.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 2</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, atque odit natus, architecto commodi dolores.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 3</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quisquam, voluptas optio officiis nobis a sequi culpa neque vero magni porro id libero deleniti totam corporis suscipit enim laborum delectus.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 4</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam excepturi saepe, aspernatur a. Earum itaque quasi consequuntur at! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati voluptates in nulla reprehenderit veritatis,
+                esse temporibus ipsam mollitia dolorem doloremque magnam quam pariatur, beatae labore.</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 5</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 6</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 7</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 8</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 9</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 10</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 11</p>
+            </div>
+            <div class="flex-item">
+              <p>Flex Box 12</p>
+            </div>
+          </div>
+        </div>
+      </div> 
+</body>
+</html>

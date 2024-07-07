@@ -1,0 +1,172 @@
+// Fonts
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+// Vars
+$lightSky: #02a9e0;
+// SCSS
+// Helper classes and default overrides
+h2 {
+  margin: 0 0 1em;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.clear {
+  clear: both;
+}
+
+.w50 {
+  display: inline-block;
+  float: left;
+  width: 50%;
+}
+
+// Main SCSS
+.flex-wrapper {
+  padding: 1em;
+  border-bottom: 2px solid #777;
+  &:nth-child(odd) {
+    background: #FFFFFF;
+  }
+  &:nth-child(even) {
+    background: #f2fbfd;
+  }
+  .flex-container {
+    display: none;
+    border: 5px solid $lightSky;
+    margin: 0 0 1em;
+    .flex-item {
+      padding: 1em;
+      &:not(:last-of-type) {
+        border-right: 1px solid $lightSky;
+      }
+    }
+    &.direction-row-reverse {
+      flex-direction: row-reverse;
+      .flex-item {
+        &:not(:first-of-type) {
+          border-right: 1px solid $lightSky;
+        }
+      }
+    }
+    &.direction-column {
+      flex-direction: column;
+      .flex-item {
+        padding: 1em;
+        border-right: none;
+        &:not(:last-of-type) {
+          border-bottom: 1px solid $lightSky;
+        }
+      }
+    }
+    &.direction-column-reverse {
+      flex-direction: column-reverse;
+      .flex-item {
+        padding: 1em;
+        border-right: none;
+        &:not(:first-of-type) {
+          border-bottom: 1px solid $lightSky;
+        }
+      }
+    }
+    &.flex-wrap-wrap {
+      flex-wrap: wrap;
+    }
+    &.flex-wrap-wrap-reverse {
+      flex-wrap: wrap-reverse;
+    }
+    &.justify-content-flex-end {
+      justify-content: flex-end;
+    }
+    &.justify-content-center {
+      justify-content: center;
+    }
+    &.justify-content-space-between {
+      justify-content: space-between;
+    }
+    &.justify-content-space-around {
+      justify-content: space-around;
+    }
+    &.align-items-flex-start {
+      align-items: flex-start;
+    }
+    &.align-items-flex-end {
+      align-items: flex-end;
+    }
+    &.align-items-center {
+      align-items: center;
+    }
+    &.align-items-baseline {
+      align-items: baseline;
+    }
+    &.align-content-flex-start {
+      align-items: flex-start;
+    }
+    &.align-content-flex-end {
+      align-items: flex-end;
+    }
+    &.align-content-center {
+      align-items: flex-center;
+    }
+    &.align-content-space-between {
+      align-items: space-between;
+    }
+    &.align-content-space-around {
+      align-items: space-around;
+    }
+  }
+  .center-container {
+    display: none;
+    margin: 0 auto;
+    max-width: 980px;
+    width: 100%;
+  }
+}
+
+// Supporting CSS for CSS "Accordion"
+input {
+  position: absolute;
+  top: -2000px;
+  left: -2000px;
+  &:checked {
+    &~label {
+      .button {
+        background: #fff;
+        color: #0252a1;
+        &:after {
+          transform: rotate(90deg);
+        }
+      }
+    }
+    &~.flex-container {
+      display: flex;
+    }
+    &~.center-container {
+      display: block;
+    }
+  }
+}
+
+label {
+  display: block;
+  width: 95%;
+  text-align: center;
+  margin: 0 auto;
+  .button {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    background: #0252a1;
+    color: #fff;
+    border: 1px solid #0252a1;
+    cursor: pointer;
+    &:after {
+      font-family: 'FontAwesome';
+      content: '\f078';
+    }
+    &:hover {
+      background: #0252a1;
+      color: #fff;
+    }
+  }
+}

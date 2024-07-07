@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700);
+
+$white:#F0ECE3;
+$yellow:#EAB25B;
+$purple:#663D4F;
+$red:#C6403D;
+$blue:#3670A0;
+
+/* Mixins */
+@mixin flexbox-display-flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@mixin flex-columns{
+  -webkit-flex-flow: column;
+	-ms-flex-flow: column;
+	flex-flow: column;
+}
+
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  padding:1em;
+  background:#333;
+  color:$white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight:800;
+  
+  //flex styles
+  @include flexbox-display-flex;
+  min-height: 100%; /* 1, 3 */
+  flex-direction: column;
+  margin:0;
+  padding:0;
+  
+}
+
+header, footer{ 
+  text-align:center;
+  background:$yellow;
+  color:#333;
+}
+header{
+  height:100px;
+  @include flexbox-display-flex;
+  align-items: center;
+  justify-content: center;
+}
+.HolyGrail-body{
+  @include flexbox-display-flex;
+  width:  100%;
+  margin:0 auto;
+  height:600px;
+  .HolyGrail-content{
+    background:$red;
+    order: 2;
+    flex: 3;
+  }
+  .HolyGrail-nav{
+    background:$purple;
+    order: 1;
+    flex: 1;
+  }
+  .HolyGrail-ads{
+    background:$blue;
+    order: 3;
+    flex: 1;
+  }
+}
+footer{
+  height:150px;
+  @include flexbox-display-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+//small screens
+@media only screen and (max-width: 720px) {
+  .HolyGrail-body{
+    @include flexbox-display-flex;
+    @include flex-columns;
+    .HolyGrail-content{
+    order:1;
+    }
+    .HolyGrail-ads{
+      order:2;
+    }
+    .HolyGrail-nav{
+      order:3;
+    }
+  }
+  footer{
+  height:50px;
+  }
+}
