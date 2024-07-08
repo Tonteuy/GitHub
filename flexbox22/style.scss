@@ -1,9 +1,9 @@
-// Fonts
+/* Fonts */
 @import url(http://weloveiconfonts.com/api/?family=fontawesome);
-// Vars
+/* Vars */
 $lightSky: #02a9e0;
-// SCSS
-// Helper classes and default overrides
+/* SCSS
+Helper classes and default overrides */
 h2 {
   margin: 0 0 1em;
 }
@@ -18,16 +18,16 @@ h2 {
 
 .w50 {
   display: inline-block;
-  float: left;
+  // float: left;
   width: 50%;
 }
 
-// Main SCSS
+/* Main SCSS */
 .flex-wrapper {
   padding: 1em;
   border-bottom: 2px solid #777;
   &:nth-child(odd) {
-    background: #FFFFFF;
+    background: #ffffff;
   }
   &:nth-child(even) {
     background: #f2fbfd;
@@ -124,13 +124,13 @@ h2 {
   }
 }
 
-// Supporting CSS for CSS "Accordion"
+/* Supporting CSS for CSS "Accordion" */
 input {
   position: absolute;
   top: -2000px;
   left: -2000px;
   &:checked {
-    &~label {
+    & ~ label {
       .button {
         background: #fff;
         color: #0252a1;
@@ -139,10 +139,10 @@ input {
         }
       }
     }
-    &~.flex-container {
+    & ~ .flex-container {
       display: flex;
     }
-    &~.center-container {
+    & ~ .center-container {
       display: block;
     }
   }
@@ -161,8 +161,8 @@ label {
     border: 1px solid #0252a1;
     cursor: pointer;
     &:after {
-      font-family: 'FontAwesome';
-      content: '\f078';
+      font-family: "FontAwesome";
+      content: "\f078";
     }
     &:hover {
       background: #0252a1;

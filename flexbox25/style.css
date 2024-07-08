@@ -1,101 +1,104 @@
 /* Setting the box rule */
 
-*, *:before, *:after {
-    -webkit-box-sizing: border-box; 
-    -moz-box-sizing: border-box; 
-    box-sizing: border-box;
-  }
-  
-  /* Styling the body rule */
-  
-  body {
-      line-height: 1.5;
-  }
-  
-  /* Setting the flex rule on the .container */
-  
-  *,*:before,*:after{
-      -webkit-box-sizing:border-box;
-      -moz-box-sizing:border-box;
-      box-sizing:border-box
-  }
-  
-  body {
-      line-height:1.5
-  }
-  
-  /* Styling the wrapper */
-  
-  .wrapper {
-      max-width: 65em;
-      margin: 0 auto;
-  }
-  
-  /* Styling the header */
-  
-  header {
-      background: steelblue;
-  }
-  
-  /* Styling the header h1 */
-  
-  header h1 {
-      color: white;
-      margin-top: 0;
-      padding: .25em;
-      text-align: center;
-  }
-  
-  nav {
-      font-size: 1.1em;
-      text-align: center;
-  }
-  
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Styling the body rule */
+
+body {
+  line-height: 1.5;
+}
+
+/* Setting the flex rule on the .container */
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+}
+
+/* Styling the wrapper */
+
+.wrapper {
+  max-width: 65em;
+  margin: 0 auto;
+}
+
+/* Styling the header */
+
+header {
+  background: steelblue;
+}
+
+/* Styling the header h1 */
+
+header h1 {
+  color: white;
+  margin-top: 0;
+  padding: 0.25em;
+  text-align: center;
+}
+
+nav {
+  font-size: 1.1em;
+  text-align: center;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav a {
+  color: white;
+  background: skyblue;
+  border-radius: 1em;
+  display: block;
+  padding: 0.45em;
+  margin: 0.55em;
+  text-decoration: none;
+}
+
+@media (min-width: 470px) {
+  header,
   nav ul {
-      margin: 0;
-      padding: 0;
-      list-style-type: none;
+    display: flex;
   }
-  
+  header {
+    flex-direction: column;
+  }
+  nav {
+    background: skyblue;
+  }
+  nav ul {
+    justify-content: center;
+  }
   nav a {
-      color: white;
-      background: skyblue;
-      border-radius: 1em;
-      display: block;
-      padding: .45em;
-      margin: .55em;
-      text-decoration: none;
+    background: none;
+    color: black;
   }
-  
-  @media (min-width: 470px) {
-      header,
-      nav ul {
-          display: flex;
-      }
-      header {
-          flex-direction: column;
-      }
-      nav {
-          background: skyblue;
-      }
-      nav ul {
-          justify-content: center;
-      }
-      nav a {
-          background: none;
-          color: black;
-      }
+}
+
+@media (min-width: 1039px) {
+  header {
+    flex-direction: row;
   }
-  
-  @media (min-width: 1039px) {
-      header {
-          flex-direction: row;
-      }
-      nav {
-        width: 43.33em;
-      }
-      nav ul {
-          justify-content: flex-end;
-      }
+  nav {
+    width: 43.33em;
   }
-  
+  nav ul {
+    justify-content: flex-end;
+  }
+}

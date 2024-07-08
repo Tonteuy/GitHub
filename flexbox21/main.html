@@ -1,72 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="title">
+      <h5>Cutup #7</h5>
+      <h1>Box-sizing</h1>
+      <p class="title-definiton">
+        The box-sizing CSS property defines how the user agent should calculate
+        the total width and height of an element.
+      </p>
+    </div>
+
+    <!-- No padding and border -->
+    <div class="parent">
+      <p class="title">Width 300px</p>
+      <div class="child content-box">
+        <p>🦊content-box</p>
+      </div>
+
+      <div class="child border-box">
+        <p>🐻border-box</p>
+      </div>
+    </div>
+
+    <!-- Padding 50px-->
+    <div class="parent">
+      <p class="title">Add padding 50px</p>
+      <div class="child content-box padding">
+        <p>🦊content-box</p>
+      </div>
+
+      <div class="child border-box padding">
+        <p>🐻 border-box</p>
+      </div>
+    </div>
+
+    <!-- Border 30px-->
+    <div class="parent">
+      <p class="title">Add border 30px</p>
+      <div class="child content-box border">
+        <p>🦊content-box</p>
+      </div>
+
+      <div class="child border-box border">
+        <p>🐻 border-box</p>
+      </div>
+    </div>
+
+    <!-- Padding 50px + Border 30px-->
+    <div class="parent">
+      <p class="title">Add padding 50px + border 30px</p>
+      <div class="child content-box padding border">
+        <p>🦊content-box</p>
+      </div>
+
+      <div class="child border-box padding border">
+        <p>🐻 border-box</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <h5>Please check this article.</h5>
+      <a
+        class="c-btn"
+        href="https://medium.com/design-code-repository/cutup-7-box-sizing-61ed487b65f1"
+        target="_black"
+        >Go to the Medium</a
+      >
+    </div>
+  </body>
 </html>
-
-<div class="title">
-	<h5>Cutup #7</h5>
-	<h1>Box-sizing</h1>
-	<p class="title-definiton">The box-sizing CSS property defines how the user agent should calculate the total width and height of an element.</p>
-	
-</div>
-
-<!-- No padding and border -->
-<div class="parent">
-	<p class="title">Width 300px</p>
-	<div class="child content-box">
-		<p>🦊content-box</p>
-	</div>
-
-	<div class="child border-box">
-		<p>🐻border-box</p>
-	</div>	
-</div>
-
-<!-- Padding 50px-->
-<div class="parent">
-	<p class="title">Add padding 50px</p>
-	<div class="child content-box padding">
-		<p>🦊content-box</p>
-	</div>
-
-	<div class="child border-box padding">
-		<p>🐻 border-box</p>
-	</div>	
-</div>
-
-<!-- Border 30px-->
-<div class="parent">
-	<p class="title">Add border 30px</p>
-	<div class="child content-box border">
-		<p>🦊content-box</p>
-	</div>
-
-	<div class="child border-box border">
-		<p>🐻 border-box</p>
-	</div>	
-</div>
-
-<!-- Padding 50px + Border 30px-->
-<div class="parent">
-	<p class="title">Add padding 50px + border 30px </p>
-	<div class="child content-box padding border">
-		<p>🦊content-box</p>
-	</div>
-
-	<div class="child border-box padding border">
-		<p>🐻 border-box</p>
-	</div>	
-</div>
-
-<div class="footer">
-	<h5>Please check this article.</h5>
-	<a class="c-btn" href="https://medium.com/design-code-repository/cutup-7-box-sizing-61ed487b65f1" target="_black">Go to the Medium</a>
-</div>

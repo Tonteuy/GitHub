@@ -1,5 +1,5 @@
-Stylus
-// $structure
+/* Stylus
+$structure */
 *
 	box-sizing: border-box
 
@@ -17,9 +17,9 @@ body
 	.inner-w
 		display: flex
 		flex-direction: column
-		flex-basis: 960px // whatever
+		flex-basis: 960px  whatever
 	header
-		//
+		
 	main
 		display: flex
 		flex-direction: column
@@ -28,7 +28,8 @@ body
 			flex-direction: row
 			justify-content: space-between
 	.content
-		flex-basis: 70% // this will keep it to the left too
+		flex-basis: 70% 
+		/* // this will keep it to the left too */
 		min-height: 2000px
 	aside
 		flex-basis: 350px
