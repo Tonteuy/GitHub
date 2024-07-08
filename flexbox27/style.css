@@ -1,5 +1,5 @@
-/* Stylus
-$structure */
+Stylus
+$structure 
 *
 	box-sizing: border-box
 
@@ -29,7 +29,7 @@ body
 			justify-content: space-between
 	.content
 		flex-basis: 70% 
-		/* // this will keep it to the left too */
+		/* this will keep it to the left too */
 		min-height: 2000px
 	aside
 		flex-basis: 350px
@@ -39,9 +39,9 @@ body
 			@media (min-width: 900px)
 				// width: 330px // too magic...
 			.widget
-				//
+				
 	footer
-		//
+		
 
 body
 	&.sticky-sidebar // added class from JS
@@ -51,7 +51,7 @@ body
 					position: fixed
 					top: $pad
 
-// $style
+ $style
 body
 	margin: 0
 	background: lightblue
@@ -66,7 +66,7 @@ body
 		background: pink
 		min-height: 120px
 	main
-		//
+	
 	.content
 		background: wheat
 	aside
