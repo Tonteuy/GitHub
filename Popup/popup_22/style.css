@@ -1,0 +1,97 @@
+.pop-layer {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: auto;
+  z-index: 999;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.pop-header {
+  position: relative;
+  padding: 15px 20px;
+  border-bottom: 1px solid #ccc;
+}
+.pop-header .title {
+  font-size: 16px;
+  font-weight: bold;
+}
+.pop-contns-box {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  bottom: 50px;
+  left: 0;
+}
+.pop-contns-box .box-inner {
+  height: 100%;
+}
+.pop-contns-box .box-inner .pop-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+/* .pop-con {padding:20px;} */
+.dim-layer {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+.dim-layer .dimBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.dim-layer .pop-layer {
+  display: block;
+}
+.btn-layerClose {
+  position: absolute;
+  display: inline-block;
+  top: 15px;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background-size: 28px auto;
+  cursor: pointer;
+}
+.pop-button {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #4d8ccb;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.popup-open {
+  width: 200px;
+  height: 50px;
+  line-height: 45px;
+  background-color: #6dbcc6;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 5px;
+}

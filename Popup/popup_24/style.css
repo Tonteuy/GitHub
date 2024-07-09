@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 300ms, opacity 300ms;
+}
+
+.popup_opened {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup__title {
+  font-size: 36px;
+  margin: 0 0 18px;
+}
+
+.popup__container {
+  background-color: #fff;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  padding: 15px;
+}
+
+.popup__image {
+  max-width: 60vw;
+  max-height: 60vh;
+}
+
+.close-button {
+  border: 0;
+  background: url("https://raw.githubusercontent.com/cat-street/popup-example/6c56297b35b19ea96581995b6635ef4ae37e82c8/button-close.svg")
+    center center / 100% 100% no-repeat;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  fill: #000;
+  padding: 0;
+  cursor: pointer;
+  display: block;
+}
+
+.popup-button {
+  margin: 30px;
+  padding: 10px;
+  font-family: inherit;
+}

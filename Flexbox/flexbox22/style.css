@@ -1,0 +1,164 @@
+/* Fonts */
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+/* Vars */
+/* SCSS
+Helper classes and default overrides */
+h2 {
+  margin: 0 0 1em;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.clear {
+  clear: both;
+}
+
+.w50 {
+  display: inline-block;
+  width: 50%;
+}
+
+/* Main SCSS */
+.flex-wrapper {
+  padding: 1em;
+  border-bottom: 2px solid #777;
+}
+.flex-wrapper:nth-child(odd) {
+  background: #ffffff;
+}
+.flex-wrapper:nth-child(even) {
+  background: #f2fbfd;
+}
+.flex-wrapper .flex-container {
+  display: none;
+  border: 5px solid #02a9e0;
+  margin: 0 0 1em;
+}
+.flex-wrapper .flex-container .flex-item {
+  padding: 1em;
+}
+.flex-wrapper .flex-container .flex-item:not(:last-of-type) {
+  border-right: 1px solid #02a9e0;
+}
+.flex-wrapper .flex-container.direction-row-reverse {
+  flex-direction: row-reverse;
+}
+.flex-wrapper .flex-container.direction-row-reverse .flex-item:not(:first-of-type) {
+  border-right: 1px solid #02a9e0;
+}
+.flex-wrapper .flex-container.direction-column {
+  flex-direction: column;
+}
+.flex-wrapper .flex-container.direction-column .flex-item {
+  padding: 1em;
+  border-right: none;
+}
+.flex-wrapper .flex-container.direction-column .flex-item:not(:last-of-type) {
+  border-bottom: 1px solid #02a9e0;
+}
+.flex-wrapper .flex-container.direction-column-reverse {
+  flex-direction: column-reverse;
+}
+.flex-wrapper .flex-container.direction-column-reverse .flex-item {
+  padding: 1em;
+  border-right: none;
+}
+.flex-wrapper .flex-container.direction-column-reverse .flex-item:not(:first-of-type) {
+  border-bottom: 1px solid #02a9e0;
+}
+.flex-wrapper .flex-container.flex-wrap-wrap {
+  flex-wrap: wrap;
+}
+.flex-wrapper .flex-container.flex-wrap-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+.flex-wrapper .flex-container.justify-content-flex-end {
+  justify-content: flex-end;
+}
+.flex-wrapper .flex-container.justify-content-center {
+  justify-content: center;
+}
+.flex-wrapper .flex-container.justify-content-space-between {
+  justify-content: space-between;
+}
+.flex-wrapper .flex-container.justify-content-space-around {
+  justify-content: space-around;
+}
+.flex-wrapper .flex-container.align-items-flex-start {
+  align-items: flex-start;
+}
+.flex-wrapper .flex-container.align-items-flex-end {
+  align-items: flex-end;
+}
+.flex-wrapper .flex-container.align-items-center {
+  align-items: center;
+}
+.flex-wrapper .flex-container.align-items-baseline {
+  align-items: baseline;
+}
+.flex-wrapper .flex-container.align-content-flex-start {
+  align-items: flex-start;
+}
+.flex-wrapper .flex-container.align-content-flex-end {
+  align-items: flex-end;
+}
+.flex-wrapper .flex-container.align-content-center {
+  align-items: flex-center;
+}
+.flex-wrapper .flex-container.align-content-space-between {
+  align-items: space-between;
+}
+.flex-wrapper .flex-container.align-content-space-around {
+  align-items: space-around;
+}
+.flex-wrapper .center-container {
+  display: none;
+  margin: 0 auto;
+  max-width: 980px;
+  width: 100%;
+}
+
+/* Supporting CSS for CSS "Accordion" */
+input {
+  position: absolute;
+  top: -2000px;
+  left: -2000px;
+}
+input:checked ~ label .button {
+  background: #fff;
+  color: #0252a1;
+}
+input:checked ~ label .button:after {
+  transform: rotate(90deg);
+}
+input:checked ~ .flex-container {
+  display: flex;
+}
+input:checked ~ .center-container {
+  display: block;
+}
+
+label {
+  display: block;
+  width: 95%;
+  text-align: center;
+  margin: 0 auto;
+}
+label .button {
+  padding: 0.5em;
+  margin-bottom: 1em;
+  background: #0252a1;
+  color: #fff;
+  border: 1px solid #0252a1;
+  cursor: pointer;
+}
+label .button:after {
+  font-family: "FontAwesome";
+  content: "\f078";
+}
+label .button:hover {
+  background: #0252a1;
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */

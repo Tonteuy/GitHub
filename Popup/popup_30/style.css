@@ -1,0 +1,99 @@
+.popup-button {
+  font: normal 500 14px "Poppins", sans-serif;
+  color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: cornflowerblue;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 25px 60px;
+  cursor: pointer;
+  box-shadow: 0px 0px 39px 3px rgba(209, 209, 209, 0.72);
+  border-radius: 200px;
+}
+.popup-button:hover {
+  box-shadow: none;
+}
+.popup {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  margin-left: 0;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  overflow: hidden;
+  z-index: 999999999;
+}
+.popup > .container {
+  width: 0;
+  height: 0px;
+  overflow: hidden;
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  z-index: 100000;
+}
+.popup:target .container {
+  max-height: 100%;
+  max-width: 100%;
+}
+.close-button {
+  z-index: 999;
+  right: 10px;
+  top: 10px;
+  position: absolute;
+  color: #777;
+  transition: 0.2s;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.close-button:after {
+  font: normal 100 30px "Material Icons", sans-serif;
+  content: "\E888";
+  display: inline-block;
+}
+.close-button:hover {
+  opacity: 1;
+}
+.sub-container {
+  width: 420px;
+  height: 220px;
+  background-color: white;
+  padding: 40px;
+  overflow: hidden;
+  transition: 0.3s;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: relative;
+}
+.container h2 {
+  font: normal 300 14px "Open Sans";
+  color: #999;
+  letter-spacing: 4px;
+  margin: 0 0 15px 0;
+}
+.container h1 {
+  font: normal 600 36px "Poppins";
+  color: #555;
+  margin: 0 0 20px 0;
+}
+.container p {
+  font: normal 400 17px/1.8 "Open Sans";
+  color: #999;
+  margin: 0;
+}

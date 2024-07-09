@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button onclick="showPopup()" class="btnPopup thePopup">Open PopUp</button>
+
+    <a
+      class="linkStyle thePopup"
+      onclick="javascript:showPopup()"
+      href="#"
+      return
+      false;
+      >Open PopUp</a
+    >
+
+    <div class="popup_container">
+      <div id="popup_content" class="popup_content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
+        quasi voluptas impedit. Culpa impedit?
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 1rem;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.intro-text {
+  max-width: 1000px;
+  margin: auto;
+}
+@media (min-width: 1000px) {
+  .intro-text p {
+    max-width: 50%;
+  }
+}
+
+.button {
+  margin-top: 1rem;
+}
+.button button {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  background-color: #ddd;
+  transition: background-color 200ms ease;
+}
+.button button:hover {
+  cursor: pointer;
+  background-color: #eee;
+}
+
+.dialog {
+  width: 80vw;
+  border: 0;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 400px) {
+  .dialog {
+    width: 50vw;
+    border: 0;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  }
+}
+#close {
+  display: block;
+  margin-top: 2rem;
+}/*# sourceMappingURL=style.css.map */

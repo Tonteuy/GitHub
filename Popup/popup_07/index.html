@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Popup 7</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css.map" />
+
+  </head>
+  <body>
+
+    <div class="wrap">
+
+      <div class="intro">
+        <p><h1>Responsive JQuery Popup</h1></p>	
+        <p><i>"Full responsive popup with JQuery using a button to hide it."</i></p><br>
+        <!-- Popup action -->
+        <a onClick="openPopup('#wrap_popup1')">Open 1st Popup</a> | 
+        <a onClick="openPopup('#wrap_popup2')">Open 2nd Popup</a>
+      </div>
+    
+      <!-- Popup -->
+      <div id="wrap_popup1" class="wrap_popup">
+        <div class="popup">
+          <div class="title">
+            <p>Advert popup</p>
+          </div>
+          <div class="box">
+            <p>This is an example text of the 1st Popup.</p>
+            <center><button onClick="closePopup('#wrap_popup1')">Close Popup</button></center>
+          </div>
+        </div>
+      </div>
+      <!-- End Popup -->
+    
+      <div id="wrap_popup2" class="wrap_popup">
+        <div class="popup">
+          <div class="title">
+            <p>Advert popup</p>
+          </div>
+          <div class="box">
+            <p>This is another example text of the 2nd Popup.</p>
+            <center><button onClick="closePopup('#wrap_popup2')">Close Popup</button></center>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+
+    
+    <script src="main.js"></script>
+  </body>
+</html>

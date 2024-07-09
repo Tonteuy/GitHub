@@ -1,0 +1,81 @@
+/* Web CSS */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #222;
+  font-family: Segoe UI;
+  color: #e6e6e6;
+}
+
+.wrap {
+  width: 80%;
+  display: block;
+  margin: 20px auto 20px auto;
+}
+
+.intro a {
+  color: #0fa3de;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Popup CSS */
+.wrap_popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.popup {
+  height: auto;
+  width: 80%;
+  max-width: 600px;
+  margin: 5% auto;
+  display: block;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 5px #000;
+}
+
+.title {
+  width: 100%;
+  display: block;
+  background: #71bbf2;
+  color: #0c63a4;
+  font-weight: 700;
+  padding: 5px;
+}
+
+.title p {
+  margin: 5px;
+}
+
+.box {
+  width: 100%;
+  display: block;
+  background: #dfdfdf;
+  padding: 5px;
+  color: #3d3d3d;
+}
+
+.box p {
+  margin: 5px;
+}
+
+.box button {
+  padding: 10px;
+  margin: 10px 0px 10px 0px;
+  background: #1c91e7;
+  color: #dfdfdf;
+  border: 3px solid #0c63a4;
+  border-radius: 5px;
+}/*# sourceMappingURL=style.css.map */

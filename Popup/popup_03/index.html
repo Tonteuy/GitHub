@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.scss" />
+  </head>
+  <body>
+
+    <h1>
+      Different Popups w/ Animation
+    </h1>
+    <p>
+      No SVGs or icon font needed.
+    </p>
+    <p>
+      <button class="button" data-for="js_basic-popup">Show basic popup</button>
+      
+      <button class="button button--warning" data-for="js_question-popup">Show question popup</button>
+    
+      <button class="button button--success" data-for="js_success-popup">Show success popup</button> 
+      
+      <button class="button button--error" data-for="js_error-popup">Show error popup</button>   
+    </p>
+    
+    <div class="popup js_basic-popup">
+      <div class="popup__background"></div>
+      <div class="popup__content">
+        <h3 class="popup__content__title">
+          Sample Popup
+        </h1>
+        <p>Lorem Ipsum dolor sit amet!</p>
+        <p>
+          <button class="button" data-for="js_basic-popup">Hide Popup</button>
+        </p>
+      </div>
+    </div>
+    
+    <div class="popup popup--icon -question js_question-popup">
+      <div class="popup__background"></div>
+      <div class="popup__content">
+        <h3 class="popup__content__title">
+          Question Popup
+        </h1>
+        <p>Lorem Ipsum dolor sit amet?</p>
+        <p>
+          <button class="button button--warning" data-for="js_question-popup">Hide Popup</button>
+        </p>
+      </div>
+    </div>
+    
+    <div class="popup popup--icon -success js_success-popup">
+      <div class="popup__background"></div>
+      <div class="popup__content">
+        <h3 class="popup__content__title">
+          Success Popup
+        </h1>
+        <p>Lorem Ipsum dolor sit amet!</p>
+        <p>
+          <button class="button button--success" data-for="js_success-popup">Hide Popup</button>
+        </p>
+      </div>
+    </div>
+    
+    <div class="popup popup--icon -error js_error-popup">
+      <div class="popup__background"></div>
+      <div class="popup__content">
+        <h3 class="popup__content__title">
+          Error Popup
+        </h1>
+        <p>Lorem Ipsum dolor sit amet!</p>
+        <p>
+          <button class="button button--error" data-for="js_error-popup">Hide Popup</button>
+        </p>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+
+  
+</html>

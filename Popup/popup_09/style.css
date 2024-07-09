@@ -1,0 +1,58 @@
+/* Hiding and showing the popup div */
+
+.popup_container {
+  position: relative;
+  display: inline-block;
+}
+
+.popup_content {
+  display: none;
+  position: absolute;
+}
+
+.show {
+  display: block;
+}
+
+/* Styling the button and the link */
+
+.linkStyle {
+  color: green;
+  padding: 16px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: verdana;
+  text-decoration: none;
+}
+
+.linkStyle:hover,
+.dropbtn:focus {
+  color: black;
+  text-decoration: underline;
+}
+
+.btnPopup {
+  background-color: #4caf50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.btnPopup:hover,
+.btnPopup:focus {
+  background-color: #3e8e41;
+}
+
+/* styling the popup*/
+
+#popup_content {
+  background-color: #eff5f5;
+  border-left: 3px solid #4caf50;
+  margin-top: 60px;
+  padding: 50px;
+  width: 200px;
+  font-family: verdana;
+  font-size: 14px;
+}
