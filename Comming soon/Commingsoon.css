@@ -17,6 +17,7 @@ h4 {
   letter-spacing: 2px;
   font-size: 48px;
   text-align: center;
+  margin-top: 50px;
 }
 
 p {
@@ -79,6 +80,7 @@ p {
   position: relative;
   height: 9vh;
   text-align: center;
+  margin-bottom: 50px;
   background-color: white;
 }
 
@@ -114,11 +116,11 @@ p {
 /*Shrinking for mobile*/
 @media (max-width: 768px) {
   .waves {
-    height: 40px;
-    min-height: 40px;
+    height: 50px;
+    min-height: 50px;
   }
   .content {
-    height: 20vh;
+    height: 30vh;
   }
   h4 {
     font-size: 18px;
@@ -127,11 +129,11 @@ p {
 /*Shrinking for ipad*/
 @media (max-width: 1024px) {
   .waves {
-    height: 50px;
-    min-height: 50px;
+    height: 60px;
+    min-height: 60px;
   }
   .content {
-    height: 40vh;
+    height: 50vh;
   }
   h4 {
     font-size: 20px;
