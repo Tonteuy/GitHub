@@ -51,5 +51,7 @@
     "WAAA",
     "YAAA"
   ],
-  "livePreview.defaultPreviewPath": "/Comming soon/index.html"
+  "livePreview.defaultPreviewPath": "/Comming soon/index.html",
+  "editor.fontFamily": "fira",
+  "editor.fontSize": 16
 }
