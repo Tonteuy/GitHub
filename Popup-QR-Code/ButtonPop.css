@@ -5,15 +5,14 @@
 
 :root {
   /*========== Colors ==========*/
-  /* --hue: 240; */
-  --first-color: hsl(152, 100%, 12%);
-  --first-color-alt: hsl(149, 53%, 89%);
+  --hue: 150;
+  --first-color: hsl(129, 57%, 33%);
+  --first-color-alt: hsl(168, 58%, 41%);
   --title-color: hsl(154, 89%, 4%);
   --text-color: hsl(154, 89%, 4%);
   --text-color-second: hsl(12, 89%, 39%);
   --body-color: #fff;
-  --container-color: hsl(149, 53%, 89%);
-
+  --container-color: hsl(243, 100%, 93%);
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
   --big-font-size: 2rem;
@@ -36,7 +35,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  box-shadow: 5px;
+  box-shadow: 10px;
 }
 
 body,
@@ -55,6 +54,7 @@ button {
   cursor: pointer;
   border: none;
   outline: none;
+  box-shadow: 2;
 }
 
 img {
@@ -77,11 +77,13 @@ img {
 
 .modal__button {
   display: inline-block;
-  background-color: var(--first-color);
+  background-color: green;
+  /* background-color: var(--first-color); */
   color: #fff;
   padding: 1rem 1.25rem;
   border-radius: 0.5rem;
   transition: 0.3s;
+  box-shadow: 3px;
 }
 
 .modal__button:hover {
@@ -92,7 +94,8 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: hsla(var(--hue), 18%, 75%, 0.8);
+  background-color: gray;
+  /* background-color: var(--container-color); */
   width: 100%;
   height: 100%;
   display: grid;
@@ -109,7 +112,7 @@ img {
 
 .modal__content {
   position: relative;
-  background-color: var(--container-color);
+  background-color: var(--body-color);
   text-align: center;
   padding: 3rem 2rem 2rem;
   border-radius: 1rem 1rem 0 0;
