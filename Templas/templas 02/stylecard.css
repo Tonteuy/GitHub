@@ -93,6 +93,9 @@ section {
         p {
           margin: 0.625rem 0 1.25rem;
           color: #01262c;
+          font-family: kanit;
+          font-size: 0.875rem;
+          
         }
       }
     }
@@ -124,6 +127,12 @@ section {
           }
         }
 
+        .card {
+          position: relative;
+          z-index: 1;
+          background-color: #fff;
+        }        
+        }
         .icon {
           position: absolute;
           bottom: -0.375rem;
